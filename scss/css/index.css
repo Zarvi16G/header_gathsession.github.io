@@ -1,0 +1,223 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  padding-right: 2rem;
+  margin: auto;
+  width: 1600px;
+}
+header .logo {
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+}
+header .logo .pink {
+  font-family: "Merriweather", serif;
+  color: #DB2A6B;
+}
+header .logo .white {
+  font-family: "Merriweather", serif;
+  color: #FFFFFF;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #ABABAB;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #E1E1E1;
+}
+header nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  width: 32px;
+  height: 4px;
+  background-color: #DB2A6B;
+  border-radius: 6px;
+}
+
+main {
+  z-index: 1;
+  padding: 5rem 3rem 10rem 3rem;
+  max-width: 1600px;
+  height: 880px;
+  margin: 0 auto;
+}
+main .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 4rem;
+}
+main .hero .hero-content {
+  margin-top: 2rem;
+}
+main .hero .hero-content h1 {
+  font-family: "Merriweather", serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 800px;
+  line-height: 1.1;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+main .hero .hero-content p {
+  font-size: 24px;
+  color: #ABABAB;
+  width: 650px;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+}
+main .hero .hero-content .cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+main .hero .hero-content .cta-buttons li a {
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .hero .hero-content .cta-buttons li.btn-primary a:hover {
+  background-color: #FFFFFF;
+  color: #DB2A6B;
+}
+main .hero .hero-content .cta-buttons li.btn-primary a {
+  background-color: #DB2A6B;
+  color: #FFFFFF;
+  width: 240px;
+  height: 60px;
+  border-radius: 20px 20px 20px 0;
+}
+main .hero .hero-content .cta-buttons li.btn-secondary {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+main .hero .hero-content .cta-buttons li.btn-secondary a {
+  color: #FFFFFF;
+  gap: 1rem;
+}
+main .hero .hero-content .cta-buttons li.btn-secondary a b {
+  font-weight: 700;
+  text-decoration: underline;
+}
+main .hero .hero-content .cta-buttons li.btn-secondary a:hover {
+  color: #DB2A6B;
+}
+main .hero .hero-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+main .hero .hero-images img {
+  width: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3rem;
+}
+main .hero .hero-images .img-purple {
+  grid-column: 1;
+  grid-row: 1/span 2;
+  height: 509px;
+}
+main .hero .hero-images .img-pink {
+  grid-column: 1;
+  grid-row: 3;
+  height: 240px;
+}
+main .hero .hero-images .img-aqua {
+  grid-column: 2;
+  grid-row: 1;
+  height: 240px;
+}
+main .hero .hero-images .img-orange {
+  grid-column: 2;
+  grid-row: 2/span 2;
+  height: 509px;
+}
+main .hero .hero-images .img-yellow {
+  grid-column: 3;
+  grid-row: 1/span 3;
+  height: 509px;
+  align-self: center;
+}
+main .features {
+  margin-top: -48px;
+  display: flex;
+  justify-content: start;
+  gap: 2.5rem;
+}
+main .features .feature-item {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 190px;
+}
+main .features .feature-item img {
+  width: 64px;
+  height: 64px;
+}
+main .features .feature-item p {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1920px;
+  height: 1080px;
+  background-color: #2B2D38;
+  overflow: hidden;
+}
+body footer .circle-1 {
+  content: "";
+  position: absolute;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(171, 171, 171, 0.25);
+  border-radius: 100%;
+  z-index: -1;
+  top: 530px;
+  left: 1320px;
+  width: 850px;
+  height: 850px;
+}
+body footer .circle-2 {
+  content: "";
+  position: absolute;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(171, 171, 171, 0.25);
+  border-radius: 100%;
+  z-index: -1;
+  top: 280px;
+  left: 1070px;
+  width: 1100px;
+  height: 1100px;
+}/*# sourceMappingURL=index.css.map */

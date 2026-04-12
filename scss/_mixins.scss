@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin nav-underline {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  width: 32px;
+  height: 4px;
+  background-color: $pink;
+  border-radius: 6px;
+}
+
+@mixin btn-primary {
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+}
+
+@mixin circle {
+  content: '';
+  position: absolute;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(171, 171, 171, 0.25);
+  border-radius: 100%;
+  z-index: -1;
+}
+
+@mixin circle-1 {
+  top: 530px;
+  left: 1320px;
+  width: 850px;
+  height: 850px;
+}
+
+@mixin circle-2 {
+  top: 280px;
+  left: 1070px;
+  width: 1100px;
+  height: 1100px;
+}
